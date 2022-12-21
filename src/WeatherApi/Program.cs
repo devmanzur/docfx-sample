@@ -1,5 +1,5 @@
-using API.Brokers;
-using API.Interfaces;
+using WeatherApi.Brokers;
+using WeatherApi.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
