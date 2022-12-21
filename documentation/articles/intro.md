@@ -1,1 +1,1 @@
-# Add your introductions here!
+# This is the introduction article

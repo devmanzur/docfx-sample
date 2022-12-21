@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "src/**.csproj"
+            "*.sln"
           ],
           "exclude": [],
           "src": ".."
@@ -54,7 +54,8 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "templates/discordfx"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
