@@ -20,3 +20,6 @@
       ]
     - ```
       docfx --serve
+- ***Does not support open api/ swagger v3 api documentation (supports swagger v2), support planned to be added in docfx v3
+- the static web contents are inside documentation/_site directory
+- on merge to master, we can run the ```docfx -serve``` command and publish the contents of _site directory to our documentation site directory
