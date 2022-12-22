@@ -20,7 +20,7 @@ public class WeatherForecastController : ControllerBase
     /// </summary>
     /// <param name="from">Starting date</param>
     /// <param name="to">Ending date</param>
-    /// <returns>list of weather forecast</returns>
+    /// <returns>Api result with WeatherForecast</returns>
     [HttpGet(Name = "GetWeatherForecast")]
     public ActionResult<IEnumerable<WeatherForecast>> Get([FromQuery] DateTime? from, [FromQuery] DateTime? to)
     {

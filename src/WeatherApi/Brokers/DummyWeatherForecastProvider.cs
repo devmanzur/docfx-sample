@@ -10,8 +10,7 @@ public class DummyWeatherForecastProvider : IWeatherForecastProvider
     /// </summary>
     /// <param name="from">Starting date</param>
     /// <param name="to">Ending date</param>
-    /// <returns>Returns list of weather forecast for the requested date range</returns>
-    /// <exception cref="ArgumentException">Throws argument exception when the given starting date is in past, or after the ending date or either dates are set to default date</exception>
+    /// <exception cref="ArgumentException">Thrown when the given starting date is in past, or after the ending date or either dates are set to default date</exception>
     public IEnumerable<WeatherForecast> GetForecasts(DateTime from, DateTime to)
     {
         if (to < DateTime.UtcNow.Date || to == default || from == default || to < from)
@@ -39,7 +38,7 @@ public class DummyWeatherForecastProvider : IWeatherForecastProvider
     /// Converts celsius value to fahrenheit
     /// </summary>
     /// <param name="temperatureInCelsius">temperature value in celsius</param>
-    /// <returns>Converted fahrenheit value</returns>
+    /// <returns>converted fahrenheit value</returns>
     private static double ConvertCelsiusToFahrenheit(int temperatureInCelsius)
     {
         return temperatureInCelsius * 1.8 + 32;
@@ -48,7 +47,7 @@ public class DummyWeatherForecastProvider : IWeatherForecastProvider
     /// <summary>
     /// Generates random temperature value in celsius
     /// </summary>
-    /// <returns></returns>
+    /// <returns>Random temperature value</returns>
     private static int GenerateRandomTemperatureInCelsius()
     {
         return Random.Shared.Next(-20, 55);
@@ -57,7 +56,7 @@ public class DummyWeatherForecastProvider : IWeatherForecastProvider
     /// <summary>
     /// Generates slight deviation values, that make the data look more realistic
     /// </summary>
-    /// <returns></returns>
+    /// <returns>Random number between -5 and 5</returns>
     private static int GenerateRandomSlightDeviation()
     {
         return Random.Shared.Next(-5, 5);
@@ -67,7 +66,7 @@ public class DummyWeatherForecastProvider : IWeatherForecastProvider
     /// Returns text summary for given temperature value
     /// </summary>
     /// <param name="temperature"></param>
-    /// <returns>text summary</returns>
+    /// <returns>text summarizing the temparature</returns>
     private static string GetTemperatureSummary(int temperature)
     {
         return temperature switch
