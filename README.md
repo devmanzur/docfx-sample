@@ -10,6 +10,7 @@
 - ```cd documentation```
 - ```docfx --serve```
 - add custom theme:
+    - from documentation folder run the below command
     - ```git clone https://github.com/jbltx/DiscordFX.git templates```
     - edit docfx.json:
       ```json
